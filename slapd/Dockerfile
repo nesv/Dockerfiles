@@ -11,4 +11,3 @@ RUN apt-get install -y -q slapd ldap-utils
 
 EXPOSE 389
 CMD ["/usr/sbin/slapd", "-d3"]
-
