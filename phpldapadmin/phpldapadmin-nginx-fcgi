@@ -1,0 +1,10 @@
+server {
+   listen 80;
+   root /srv/www/phpldapadmin;
+   location / {
+      index index.html index.htm;
+   }
+   location ~ \.php$ {
+      include /etc/nginx/fastcgi_params;
+   }
+}
