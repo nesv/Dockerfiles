@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get -y install software-properties-common
 RUN add-apt-repository ppa:rethinkdb/ppa
 RUN apt-get update
-RUN apt-get install -y rethinkdb
+RUN apt-get install -y rethinkdb=1.12.4-0ubuntu1~trusty
 
 RUN /usr/bin/rethinkdb create -d rethinkdb_data
 
