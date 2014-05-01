@@ -1,12 +1,19 @@
-# RethinkDB
+## RethinkDB
+## ---
 rethinkdb
 
-# OpenLDAP
+## OpenLDAP
 slapd
 
-# MongoDB images.
-# The "mongodb/base" image needs to be first, as the other mongodb/*
-# images build from it.
+## phpLDAPadmin
+## ---
+## This image is not quite ready, yet.
+# phpldapadmin
+
+## MongoDB
+## ---
+## The "mongodb/base" image needs to be first, as the other mongodb/*
+## images build from it.
 mongodb/base
 mongodb/mongod
 mongodb/mongos
