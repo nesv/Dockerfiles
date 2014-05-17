@@ -18,3 +18,7 @@ mongodb/base
 mongodb/mongod
 mongodb/mongos
 mongodb/configsvr
+
+## PostgreSQL!
+## ---
+postgresql
