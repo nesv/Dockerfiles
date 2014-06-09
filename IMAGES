@@ -22,3 +22,7 @@ mongodb/configsvr
 ## PostgreSQL!
 ## ---
 postgresql
+
+## Elasticsearch
+## ---
+elasticsearch
