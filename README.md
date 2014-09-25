@@ -21,6 +21,15 @@ hash/pound character `#`. The script will know to skip these lines.
 If you do not want to build all of the images in this repository, then just 
 edit the `IMAGES` file accordingly.
 
+### One-offs
+
+If you would only like to build (or re-build) one image, and don't want to
+have the `build-images.sh` script run through your `IMAGES` file again, you
+can specify which images you would like to have built by specifying them as
+arguments to `build-images.sh`, like so:
+
+	$ ./build-images.sh rethinkdb
+
 ## Notes 
 
 ### slapd
