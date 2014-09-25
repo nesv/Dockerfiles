@@ -14,7 +14,9 @@ reset='\e[0m'
 
 # The list of images to build.
 #
-# First, we are going to check for an IMAGES file in the current directory,
+# First, we check to see if any image names were provided on the command line.
+#
+# Then, we are going to check for an IMAGES file in the current directory,
 # and if it exists, we are going to use that as the ordered list of images
 # to build.
 #
@@ -24,7 +26,10 @@ reset='\e[0m'
 # The IMAGES file can contain blank lines, as well as comments, which should
 # be on their own line, starting with a "#" character.
 declare images
-if [ -e "IMAGES" ]
+if [ ${#@} -gt 0 ]
+then
+	images="$@"
+elif [ -e "IMAGES" ]
 then
 	images=$(cat IMAGES | sed -e '/^#/d' -e 's/^#//')
 else
